@@ -64,12 +64,15 @@
             // 
             nav_list_item_1.AutoSize = true;
             nav_list_item_1.BackColor = Color.Transparent;
+            nav_list_item_1.Cursor = Cursors.Hand;
             nav_list_item_1.Font = new Font("Franklin Gothic Heavy", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             nav_list_item_1.Location = new Point(31, 141);
             nav_list_item_1.Name = "nav_list_item_1";
-            nav_list_item_1.Size = new Size(263, 41);
+            nav_list_item_1.Size = new Size(295, 41);
             nav_list_item_1.TabIndex = 4;
-            nav_list_item_1.Text = "SPIELMODUS 1";
+            nav_list_item_1.Tag = "twoplayers";
+            nav_list_item_1.Text = "Player vs. Player";
+            nav_list_item_1.Click += Nav_list_item_Click;
             nav_list_item_1.MouseEnter += Nav_list_item_MouseEnter;
             nav_list_item_1.MouseLeave += Nav_list_item_MouseLeave;
             // 
@@ -77,12 +80,14 @@
             // 
             nav_list_item_2.AutoSize = true;
             nav_list_item_2.BackColor = Color.Transparent;
+            nav_list_item_2.Cursor = Cursors.Hand;
             nav_list_item_2.Font = new Font("Franklin Gothic Heavy", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             nav_list_item_2.Location = new Point(31, 200);
             nav_list_item_2.Name = "nav_list_item_2";
             nav_list_item_2.Size = new Size(263, 41);
             nav_list_item_2.TabIndex = 5;
             nav_list_item_2.Text = "SPIELMODUS 2";
+            nav_list_item_2.Click += Nav_list_item_Click;
             nav_list_item_2.MouseEnter += Nav_list_item_MouseEnter;
             nav_list_item_2.MouseLeave += Nav_list_item_MouseLeave;
             // 
@@ -90,12 +95,14 @@
             // 
             nav_list_item_3.AutoSize = true;
             nav_list_item_3.BackColor = Color.Transparent;
+            nav_list_item_3.Cursor = Cursors.Hand;
             nav_list_item_3.Font = new Font("Franklin Gothic Heavy", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             nav_list_item_3.Location = new Point(31, 259);
             nav_list_item_3.Name = "nav_list_item_3";
             nav_list_item_3.Size = new Size(263, 41);
             nav_list_item_3.TabIndex = 6;
             nav_list_item_3.Text = "SPIELMODUS 3";
+            nav_list_item_3.Click += Nav_list_item_Click;
             nav_list_item_3.MouseEnter += Nav_list_item_MouseEnter;
             nav_list_item_3.MouseLeave += Nav_list_item_MouseLeave;
             // 
@@ -103,12 +110,14 @@
             // 
             nav_list_item_4.AutoSize = true;
             nav_list_item_4.BackColor = Color.Transparent;
+            nav_list_item_4.Cursor = Cursors.Hand;
             nav_list_item_4.Font = new Font("Franklin Gothic Heavy", 26.25F, FontStyle.Regular, GraphicsUnit.Point);
             nav_list_item_4.Location = new Point(31, 317);
             nav_list_item_4.Name = "nav_list_item_4";
             nav_list_item_4.Size = new Size(263, 41);
             nav_list_item_4.TabIndex = 7;
             nav_list_item_4.Text = "SPIELMODUS 4";
+            nav_list_item_4.Click += Nav_list_item_Click;
             nav_list_item_4.MouseEnter += Nav_list_item_MouseEnter;
             nav_list_item_4.MouseLeave += Nav_list_item_MouseLeave;
             // 
@@ -116,7 +125,8 @@
             // 
             Help_Panel.BackgroundImage = (Image)resources.GetObject("Help_Panel.BackgroundImage");
             Help_Panel.BackgroundImageLayout = ImageLayout.Stretch;
-            Help_Panel.Location = new Point(548, 245);
+            Help_Panel.Cursor = Cursors.No;
+            Help_Panel.Location = new Point(544, 239);
             Help_Panel.Name = "Help_Panel";
             Help_Panel.Size = new Size(299, 214);
             Help_Panel.TabIndex = 8;

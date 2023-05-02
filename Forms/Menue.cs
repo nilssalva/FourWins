@@ -13,6 +13,7 @@ namespace FourWins
 {
     public partial class Menue : Form
     {
+        TwoPlayers TwoPlayers;
         public int Nav_list_item_change = 1;
 
         public Menue()
@@ -47,6 +48,25 @@ namespace FourWins
                     l.Location = new Point(l.Location.X - 2, l.Location.Y);
                     l.Text = value;
                     Nav_list_item_change = 1;
+                }
+            }
+        }
+
+        private void Nav_list_item_Click(object sender, EventArgs e)
+        {
+            Label? label = sender as Label;
+            if (label != null)
+            {
+                switch (label.Tag)
+                {
+                    case "twoplayers":
+                        TwoPlayers singleplayer = new TwoPlayers(this);
+                        singleplayer.Show();
+                        this.Hide();
+                        break;
+                    default:
+                        MessageBox.Show("d");
+                        break;
                 }
             }
         }
